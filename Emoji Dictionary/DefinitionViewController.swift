@@ -20,7 +20,34 @@ class DefinitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         emojiLabel.text = emoji
-        print(emoji)
+        
+        if emoji == "💩" {
+            emojiTextLabel.text = "This is da POOO"
+        }
+        
+        if emoji == "😀" {
+            emojiTextLabel.text = "This is da smile"
+        }
+        
+        if emoji == "😎" {
+            emojiTextLabel.text = "This is da glasses guy"
+        }
+        
+        if emoji == "😛" {
+            emojiTextLabel.text = "This is da smile with tongue"
+        }
+        
+        if emoji == "😻" {
+            emojiTextLabel.text = "This is da cat in love smile"
+        }
+        
+        if emoji == "🐹" {
+            emojiTextLabel.text = "This is da hamster"
+        }
+        
+        if emoji == "🍕" {
+            emojiTextLabel.text = "This is da pizza"
+        }
     }
 
     override func didReceiveMemoryWarning() {
