@@ -63,7 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some emoji text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ib-DV-tfF">
-                                <rect key="frame" x="126" y="393" width="123" height="21"/>
+                                <rect key="frame" x="126" y="373" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category of emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-Nx-Szr">
+                                <rect key="frame" x="119.5" y="419" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdE-fe-AXQ">
+                                <rect key="frame" x="150.5" y="465" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,13 +83,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EdE-fe-AXQ" firstAttribute="centerX" secondItem="YOI-Wt-b6X" secondAttribute="centerX" id="CwQ-Zo-mGQ"/>
                             <constraint firstItem="4BU-8o-3uG" firstAttribute="top" secondItem="ZsD-Et-7SH" secondAttribute="bottom" constant="40" id="Fbu-SV-4YA"/>
+                            <constraint firstItem="EdE-fe-AXQ" firstAttribute="top" secondItem="Kkg-Nx-Szr" secondAttribute="bottom" constant="25" id="MuU-9S-O2c"/>
                             <constraint firstItem="7ib-DV-tfF" firstAttribute="centerX" secondItem="YOI-Wt-b6X" secondAttribute="centerX" id="QkI-c8-Aa4"/>
                             <constraint firstItem="4BU-8o-3uG" firstAttribute="centerX" secondItem="YOI-Wt-b6X" secondAttribute="centerX" id="XnI-wi-tiC"/>
-                            <constraint firstItem="7ib-DV-tfF" firstAttribute="top" secondItem="4BU-8o-3uG" secondAttribute="bottom" constant="50" id="v0Q-L4-DxN"/>
+                            <constraint firstItem="Kkg-Nx-Szr" firstAttribute="centerX" secondItem="YOI-Wt-b6X" secondAttribute="centerX" id="ZUp-cK-4Qw"/>
+                            <constraint firstItem="7ib-DV-tfF" firstAttribute="top" secondItem="4BU-8o-3uG" secondAttribute="bottom" constant="30" id="v0Q-L4-DxN"/>
+                            <constraint firstItem="Kkg-Nx-Szr" firstAttribute="top" secondItem="7ib-DV-tfF" secondAttribute="bottom" constant="25" id="zR5-TR-gjq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="EdE-fe-AXQ" id="hu6-j3-JUq"/>
+                        <outlet property="categoryLabel" destination="Kkg-Nx-Szr" id="oGX-gB-zed"/>
                         <outlet property="emojiLabel" destination="4BU-8o-3uG" id="W9n-WK-elF"/>
                         <outlet property="emojiTextLabel" destination="7ib-DV-tfF" id="EyT-z3-iw0"/>
                     </connections>

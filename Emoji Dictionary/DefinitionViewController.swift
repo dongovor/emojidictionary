@@ -14,6 +14,8 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiTextLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,30 +25,44 @@ class DefinitionViewController: UIViewController {
         
         if emoji == "💩" {
             emojiTextLabel.text = "This is da POOO"
+            categoryLabel.text = "Funny"
+            birthLabel.text = "Birth year: 2015"
         }
         
         if emoji == "😀" {
             emojiTextLabel.text = "This is da smile"
+            categoryLabel.text = "Smile"
+            birthLabel.text = "Birth year: 2001"
         }
         
         if emoji == "😎" {
-            emojiTextLabel.text = "This is da glasses guy"
+            emojiTextLabel.text = "This is da sunglasses guy"
+            categoryLabel.text = "Smile"
+            birthLabel.text = "Birth year: 2000"
         }
         
         if emoji == "😛" {
             emojiTextLabel.text = "This is da smile with tongue"
+            categoryLabel.text = "Smile"
+            birthLabel.text = "Birth year: 2006"
         }
         
         if emoji == "😻" {
             emojiTextLabel.text = "This is da cat in love smile"
+            categoryLabel.text = "Smile"
+            birthLabel.text = "Birth year: 2013"
         }
         
         if emoji == "🐹" {
             emojiTextLabel.text = "This is da hamster"
+            categoryLabel.text = "Funny"
+            birthLabel.text = "Birth year: 2015"
         }
         
         if emoji == "🍕" {
             emojiTextLabel.text = "This is da pizza"
+            categoryLabel.text = "Funny"
+            birthLabel.text = "Birth year: 2013"
         }
     }
 
